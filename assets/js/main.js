@@ -71,6 +71,31 @@
     cookie?.classList.add('hidden');
   });
 
+
+
+  const tiltScene = document.querySelector('[data-tilt-scene]');
+  if (tiltScene && window.matchMedia('(min-width: 721px)').matches) {
+    const layers = tiltScene.querySelectorAll('[data-depth]');
+    const moveScene = (event) => {
+      const rect = tiltScene.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+      layers.forEach((layer) => {
+        const depth = Number(layer.dataset.depth || 10);
+        const tx = x * depth;
+        const ty = y * depth * -0.7;
+        layer.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
+      });
+    };
+    const resetScene = () => {
+      layers.forEach((layer) => {
+        layer.style.transform = 'translate3d(0,0,0)';
+      });
+    };
+    tiltScene.addEventListener('mousemove', moveScene);
+    tiltScene.addEventListener('mouseleave', resetScene);
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {

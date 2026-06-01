@@ -75,3 +75,73 @@ h1,h2,h3,p{margin-top:0}h1{font-size:clamp(44px,6.8vw,84px);line-height:.96;lett
 @media (max-width:420px){
   .hero-visual{border-radius:30px}.phone-mockup{width:100%}.orbit-card{width:100%}.metric-card{min-height:118px;padding:16px}.metric-card b{font-size:36px}.metric-card span{font-size:13px}.case-client-card img,.case-photo-card img{max-height:300px}.source-card{padding:12px}.source-visual{border-radius:18px}
 }
+
+
+/* === Final UX refinements === */
+.hero-visual{isolation:isolate;perspective:1200px}
+.hero-aura{position:absolute;z-index:0;filter:blur(10px);border-radius:999px;pointer-events:none}
+.hero-aura-left{left:-10px;top:50px;width:180px;height:180px;background:radial-gradient(circle,rgba(240,90,40,.26),transparent 68%)}
+.hero-aura-right{right:10px;bottom:80px;width:220px;height:220px;background:radial-gradient(circle,rgba(29,105,242,.18),transparent 70%)}
+.hero-floating{position:absolute;z-index:6;padding:12px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.68);background:rgba(255,255,255,.82);backdrop-filter:blur(14px);box-shadow:0 18px 40px rgba(21,38,74,.14);font-size:13px;font-weight:800;color:var(--text);animation:floatBadge 6s ease-in-out infinite}
+.hero-floating-top{left:28px;top:32px}
+.hero-floating-bottom{right:22px;bottom:22px;animation-delay:1.2s}
+@keyframes floatBadge{50%{transform:translateY(-6px)}}
+.flow-explainer{position:absolute;z-index:5;left:22px;right:195px;top:120px;padding:18px 20px;border-radius:24px;background:rgba(255,255,255,.8);border:1px solid rgba(23,32,51,.09);backdrop-filter:blur(12px);box-shadow:0 18px 42px rgba(21,38,74,.1)}
+.flow-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.flow-kicker:before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.flow-explainer p{margin:10px 0 0;font-size:13px;line-height:1.45;color:#55647a}
+.orbit-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px}
+.orbit-card b{display:block;line-height:1.1}
+.orbit-card p{margin:4px 0 0;font-size:12px;line-height:1.4;color:#58677d}
+.orbit-arrow{display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:linear-gradient(135deg,var(--accent-soft),#fff);color:var(--accent);font-weight:900;font-size:16px;flex:none}
+.card-site{left:18px;bottom:122px}
+.card-ads{right:6px;top:250px}
+.card-bot{left:102px;bottom:18px}
+.metric-card b{color:var(--text)!important}
+.metric-card span{color:#55647a}
+.metric-card:before{content:"";width:54px;height:6px;border-radius:999px;background:linear-gradient(90deg,var(--accent),rgba(240,90,40,0));display:block;margin-bottom:18px;opacity:.45}
+.metric-card{gap:10px}
+
+.forum-card{display:flex;flex-direction:column;gap:16px;position:relative;padding:28px;border-radius:34px;background:linear-gradient(145deg,#fff,#f8fbff)}
+.forum-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.forum-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.forum-link{font-size:12px;font-weight:800;color:var(--accent-2)}
+.forum-card-text{margin:0;color:#55647a}
+.forum-card ul{margin:0;padding-left:18px}
+.forum-card-cta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 28px rgba(21,38,74,.08);font-weight:900;color:var(--text)}
+.forum-card-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:linear-gradient(135deg,var(--accent),#ff945d);color:#fff;box-shadow:0 10px 22px rgba(240,90,40,.22)}
+.forum-card:hover .forum-card-icon{transform:translateX(3px)}
+
+@media (min-width:721px){
+  [data-tilt-scene] [data-depth]{transition:transform .25s ease-out}
+}
+@media (max-width:720px){
+  .hero{padding-top:118px}
+  h1{font-size:clamp(38px,10vw,56px);line-height:.96;letter-spacing:-.06em}
+  .hero-content{position:relative;z-index:2}
+  .hero-floating{position:relative;left:auto;right:auto;top:auto;bottom:auto;width:fit-content;max-width:100%;font-size:12px;padding:10px 14px}
+  .hero-visual{display:grid;gap:12px;padding:14px 12px 16px}
+  .hero-aura{display:none}
+  .flow-explainer{position:relative;left:auto;right:auto;top:auto;padding:16px;border-radius:20px;order:2}
+  .hero-screenshot{order:1}
+  .hero-floating-top{order:0}
+  .hero-floating-bottom{order:7;justify-self:start}
+  .orbit-card{order:3;grid-template-columns:auto 1fr auto;padding:14px 16px;border-radius:20px}
+  .orbit-card p{display:block;text-align:left;font-size:12px;line-height:1.35}
+  .orbit-arrow{width:28px;height:28px;font-size:14px}
+  .card-site,.card-ads,.card-bot{left:auto;right:auto;top:auto;bottom:auto}
+  .phone-mockup{order:6}
+  .forum-card{padding:22px;border-radius:28px}
+  .forum-card-top{align-items:flex-start;flex-direction:column}
+  .forum-link{font-size:13px}
+  .metric-card{min-height:132px}
+}
+@media (max-width:420px){
+  .flow-explainer p{font-size:12px}
+  .hero-floating{font-size:11px}
+  .orbit-card{padding:12px 14px}
+  .orbit-card b{font-size:17px}
+  .orbit-card p{font-size:11.5px}
+  .metric-card b{font-size:34px!important}
+  .forum-card-cta{padding:12px 14px}
+}

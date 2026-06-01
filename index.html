@@ -50,24 +50,41 @@
             <div><strong>5–10</strong><span>заявок до окупаемости</span></div>
           </div>
         </div>
-        <div class="hero-visual hero-visual-light reveal delay-1" aria-label="Визуальная схема: сайт, реклама и заявки">
-          <figure class="hero-screenshot"><img src="https://neotwalker.github.io/razinkov/img/client-site.jpg" alt="Пример сайта по ремонту холодильников"><figcaption>пример посадочной страницы</figcaption></figure>
-          <div class="orbit-card card-site">
+        <div class="hero-visual hero-visual-light reveal delay-1" aria-label="Визуальная схема: сайт, реклама и заявки" data-tilt-scene>
+          <div class="hero-aura hero-aura-left" aria-hidden="true"></div>
+          <div class="hero-aura hero-aura-right" aria-hidden="true"></div>
+          <div class="hero-floating hero-floating-top" aria-hidden="true">Запуск за 2–3 дня</div>
+          <div class="hero-floating hero-floating-bottom" aria-hidden="true">Окупаемость — от 5 до 10 заявок</div>
+          <figure class="hero-screenshot" data-depth="10"><img src="https://neotwalker.github.io/razinkov/img/client-site.jpg" alt="Пример сайта по ремонту холодильников"><figcaption>пример посадочной страницы</figcaption></figure>
+          <div class="flow-explainer" data-depth="18">
+            <span class="flow-kicker">Как работает система заявок</span>
+            <p>Три элемента работают вместе: сайт повышает доверие, Директ приводит горячий спрос, а Telegram-бот сразу сообщает о новых заявках.</p>
+          </div>
+          <div class="orbit-card card-site" data-depth="16">
             <span class="dot green"></span>
-            <b>Сайт</b>
-            <p>страницы под услуги и город</p>
+            <div>
+              <b>Сайт</b>
+              <p>Показывает услуги, цены и помогает клиенту оставить заявку</p>
+            </div>
+            <span class="orbit-arrow">→</span>
           </div>
-          <div class="orbit-card card-ads">
+          <div class="orbit-card card-ads" data-depth="22">
             <span class="dot yellow"></span>
-            <b>Директ</b>
-            <p>поиск клиентов с горячим спросом</p>
+            <div>
+              <b>Яндекс Директ</b>
+              <p>Приводит людей, которые уже ищут ремонт техники в вашем городе</p>
+            </div>
+            <span class="orbit-arrow">→</span>
           </div>
-          <div class="orbit-card card-bot">
+          <div class="orbit-card card-bot" data-depth="14">
             <span class="dot blue"></span>
-            <b>Telegram-бот</b>
-            <p>заявки и отзывы сразу в телефоне</p>
+            <div>
+              <b>Telegram-бот</b>
+              <p>Мгновенно отправляет заявку и отзыв вам в Telegram без потерь</p>
+            </div>
+            <span class="orbit-arrow">→</span>
           </div>
-          <div class="phone-mockup">
+          <div class="phone-mockup" data-depth="26">
             <div class="phone-top"></div>
             <div class="lead-card active"><span>Новая заявка</span><b>Ремонт холодильника</b><small>Волгоград · +7 ***</small></div>
             <div class="lead-card"><span>Средний чек</span><b>9 000 ₽</b><small>по кейсу клиента</small></div>
@@ -101,12 +118,12 @@
           <button class="button" data-modal-open type="button">Обсудить мой источник заявок</button>
         </div>
         <div class="source-list">
-          <article class="source-card reveal"><img class="source-visual" src="assets/img/source-aggregators.svg" alt="Агрегаторы заявок"><h3>Профи.ру и агрегаторы</h3><p>Есть зависимость от рейтингов и правил площадки, высокая комиссия и конкуренция за клиента с низкой ценой.</p></article>
-          <article class="source-card reveal"><img class="source-visual" src="assets/img/source-outdoor.svg" alt="Наружная реклама"><h3>Наружная реклама</h3><p>Сложно контролировать результат, дорого покрывать район выезда, а объявления легко теряются среди конкурентов.</p></article>
-          <article class="source-card reveal"><img class="source-visual" src="assets/img/source-word.svg" alt="Сарафанное радио"><h3>Сарафанное радио</h3><p>Это лучший источник доверия, но его трудно масштабировать. Он работает сильнее, когда у вас уже есть сайт и база клиентов.</p></article>
-          <article class="source-card reveal"><img class="source-visual" src="assets/img/source-avito.svg" alt="Доски объявлений"><h3>Авито</h3><p>Площадка даёт обращения, но правила часто меняются, конкуренция высокая, а масштабирование может упереться в блокировки и демпинг.</p></article>
-          <article class="source-card reveal"><img class="source-visual" src="assets/img/source-maps.svg" alt="Карты и геосервисы"><h3>2ГИС и Яндекс Карты</h3><p>Хороший канал, если есть реальная точка. Для мастеров на выезде он подходит не всегда, поэтому его лучше дополнять сайтом.</p></article>
-          <article class="source-card source-card-accent reveal"><img class="source-visual" src="assets/img/source-direct.svg" alt="Сайт и Яндекс Директ"><h3>Сайт + Яндекс Директ</h3><ul><li>Можно запускать рекламу под прибыльные услуги.</li><li>Сайт формирует доверие и помогает держать средний чек.</li><li>Страницы масштабируются под города, услуги и бренды техники.</li><li>Подключаем блок отзывов и систему модерации обратной связи.</li></ul></article>
+          <article class="source-card reveal"><img class="source-icon" src="https://neotwalker.github.io/razinkov/img/profi.png" alt="Профи.ру"><span>01</span><h3>Профи.ру и агрегаторы</h3><p>Есть зависимость от рейтингов и правил площадки, высокая комиссия и конкуренция за клиента с низкой ценой.</p></article>
+          <article class="source-card reveal"><span>02</span><h3>Наружная реклама</h3><p>Сложно контролировать результат, дорого покрывать район выезда, а объявления легко теряются среди конкурентов.</p></article>
+          <article class="source-card reveal"><span>03</span><h3>Сарафанное радио</h3><p>Это лучший источник доверия, но его трудно масштабировать. Он работает сильнее, когда у вас уже есть сайт и база клиентов.</p></article>
+          <article class="source-card reveal"><span>04</span><h3>Авито</h3><p>Площадка даёт обращения, но правила часто меняются, конкуренция высокая, а масштабирование может упереться в блокировки и демпинг.</p></article>
+          <article class="source-card reveal"><span>05</span><h3>2ГИС и Яндекс Карты</h3><p>Хороший канал, если есть реальная точка. Для мастеров на выезде он подходит не всегда, поэтому его лучше дополнять сайтом.</p></article>
+          <article class="source-card source-card-accent reveal"><span>06</span><h3>Сайт + Яндекс Директ</h3><ul><li>Можно запускать рекламу под прибыльные услуги.</li><li>Сайт формирует доверие и помогает держать средний чек.</li><li>Страницы масштабируются под города, услуги и бренды техники.</li><li>Подключаем блок отзывов и систему модерации обратной связи.</li></ul></article>
         </div>
       </div>
     </section>
@@ -122,10 +139,10 @@
           <div class="case-dashboard">
             <a class="case-client-card" href="https://neotwalker.github.io/razinkov/img/client.jpg" target="_blank" rel="noopener"><img src="https://neotwalker.github.io/razinkov/img/client.jpg" alt="Клиент по ремонту холодильников"><span>Клиент из Волгограда</span></a>
             <a class="case-image-card case-photo-card" href="https://neotwalker.github.io/razinkov/img/client-site.jpg" target="_blank" rel="noopener"><img src="https://neotwalker.github.io/razinkov/img/client-site.jpg" alt="Сайт Константина по ремонту холодильников"><span>Сайт Константина · нажмите для увеличения</span></a>
-            <div class="metric-card"><b>10</b><span>заявок за первую неделю</span></div>
-            <div class="metric-card"><b>900 ₽</b><span>стоимость заявки после оптимизации</span></div>
-            <div class="metric-card"><b>160</b><span>звонков в месяц через 6 месяцев</span></div>
-            <div class="metric-card"><b>120</b><span>выездов в месяц</span></div>
+            <div class="metric-card"><b>10</b><span>заявок за первую неделю запуска</span></div>
+            <div class="metric-card"><b>900 ₽</b><span>стоимость заявки после оптимизации рекламы</span></div>
+            <div class="metric-card"><b>160</b><span>звонков в месяц через 6 месяцев работы</span></div>
+            <div class="metric-card"><b>120</b><span>реальных выездов в месяц</span></div>
           </div>
           <div class="timeline">
             <article><span>Ситуация до</span><ul><li>Заблокировали сетку профилей на Авито: отлетело 6 аккаунтов.</li><li>Сарафан давал 1–2 обращения в неделю — этого не хватало для стабильного заработка.</li><li>Фирма забирала 60% от чека.</li><li>Доход мастера упал со 150 до 60 тыс. рублей в месяц.</li></ul></article>
@@ -180,8 +197,20 @@
     <section class="section-pad forum">
       <div class="container forum-grid">
         <div class="section-title reveal"><span class="eyebrow">Сообщество</span><h2>Мы любим ремонт бытовой техники и делимся новостями в Telegram</h2><img class="forum-preview" src="https://neotwalker.github.io/razinkov/img/forum-1.png" alt="Telegram-канал Razinkoff"></div>
-        <a class="forum-card reveal" href="https://t.me/+H6qUP4q4FvoyYjMy" target="_blank" rel="noopener"><h3>Чат холодильщиков и стиральщиков</h3><ul><li>1250+ участников</li><li>Дружелюбная атмосфера</li><li>Помощь в ремонте</li><li>Периодически делимся заявками без оплат</li></ul></a>
-        <a class="forum-card reveal" href="https://t.me/Razinkoff" target="_blank" rel="noopener"><h3>Канал про заявки на ремонт техники</h3><ul><li>Тенденции рекламы</li><li>Актуальные источники заявок</li><li>Розыгрыши сайтов и инструмента</li><li>Результаты рекламы по городам</li></ul></a>
+        <a class="forum-card reveal" href="https://t.me/+H6qUP4q4FvoyYjMy" target="_blank" rel="noopener" aria-label="Перейти в чат холодильщиков и стиральщиков в Telegram">
+          <div class="forum-card-top"><span class="forum-badge">Чат Telegram</span><span class="forum-link">Открыть ↗</span></div>
+          <h3>Чат холодильщиков и стиральщиков</h3>
+          <p class="forum-card-text">Профессиональное сообщество, где можно пообщаться с коллегами, задать вопрос по ремонту и иногда получить заявку.</p>
+          <ul><li>1250+ участников</li><li>Дружелюбная атмосфера</li><li>Помощь в ремонте</li><li>Периодически делимся заявками без оплат</li></ul>
+          <div class="forum-card-cta"><span>Перейти в чат</span><span class="forum-card-icon">→</span></div>
+        </a>
+        <a class="forum-card reveal" href="https://t.me/Razinkoff" target="_blank" rel="noopener" aria-label="Перейти в канал про заявки на ремонт техники в Telegram">
+          <div class="forum-card-top"><span class="forum-badge">Канал Telegram</span><span class="forum-link">Открыть ↗</span></div>
+          <h3>Канал про заявки на ремонт техники</h3>
+          <p class="forum-card-text">Канал для тех, кто хочет лучше понимать рекламу, заявки и то, как масштабировать поток клиентов в ремонтной нише.</p>
+          <ul><li>Тенденции рекламы</li><li>Актуальные источники заявок</li><li>Розыгрыши сайтов и инструмента</li><li>Результаты рекламы по городам</li></ul>
+          <div class="forum-card-cta"><span>Перейти в канал</span><span class="forum-card-icon">→</span></div>
+        </a>
       </div>
     </section>
 
